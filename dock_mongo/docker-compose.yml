@@ -1,0 +1,9 @@
+db-mongo:
+  image: mongo:4.0.6-xenial
+  container_name: dock_mongo
+  volumes:
+    - ./mongod.conf:/etc/mongod.conf
+    - ./data:/data/db
+  ports:
+    - "27017:27017"
+  command: mongod --config /etc/mongod.conf

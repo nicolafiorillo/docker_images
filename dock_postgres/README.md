@@ -1,5 +1,5 @@
-# Docker images
-My docker images.
+# dock_mongo
+Simple mongo instance.
 
 Run with:
 ```bash
